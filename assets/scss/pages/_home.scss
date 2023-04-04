@@ -1,0 +1,114 @@
+.breadcrum-section{
+    padding: 20px 0;
+    border-bottom: 1px solid #E0E0E0;
+
+    h1{
+        font-weight: 700;
+        font-size: calc(18px + (24 - 18) * ((100vw - 300px) / (1920 - 300)));
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    button{
+        border: 1px solid #E0E0E0;
+        border-radius: 8px;
+        background-color: $white-color;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+.movie-poster{  
+
+    .movie-cover-poster{
+        text-align: center;
+
+        @media (max-width:991px) {
+            margin-bottom: 30px;
+        }
+    }
+    .chart{
+        padding: 24px 24px 0;
+        border: 1px solid $border-color;
+        border-radius: 8px;
+
+        @media (max-width:767px) {
+            padding: 12px 12px 0;
+        }
+    }
+}
+
+.movies-tab-section {
+    padding-bottom: calc(40px + (80 - 40) * ((100vw - 300px) / (1920 - 300)));
+    ul{
+        border-bottom: 1px solid #EEEEEE;
+        gap:26px;
+        li{
+
+            button{
+                font-weight: 600;
+                font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1920 - 300)));
+                line-height: 1.4;
+                color: #AAAAAA;
+                padding: 0;
+                padding-bottom: 10px;
+                position: relative;
+
+                &:focus, &:hover{
+                    color: $black-color;
+                }
+
+                &.active{
+                    color: $black-color;
+                    &::after{
+                        width: 100%;
+                    }
+                }
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 2px;
+                    left: 0;
+                    bottom: 0;
+                    border-radius: 8px;
+                    background: linear-gradient(273.64deg, #35C3F3 11.27%, #8B9FE8 36.72%, #E681D8 61.72%, #FFA9A4 82.79%, #FED2CE 107.29%, #FED2CE 107.29%);
+                    transition: 0.3s all;
+                }
+            }
+        }
+    }
+
+    .tab-content{
+        form{
+            .input-group{
+                border: 1px solid #E0E0E0;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                padding: 15px;
+                gap: 10px;
+                span{
+                    display: inline-block;
+                  line-height: 0;
+                }
+
+                input{
+                    border: none;
+                    border-radius: 8px;
+                    padding: 0;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 1.2;
+                    color: #6A6A6A;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}

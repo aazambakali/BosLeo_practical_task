@@ -1,0 +1,17 @@
+.footer{
+    background-color: $black-color;
+    text-align: center;
+    padding: 26px 10px;
+    p{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.4;
+        color: $text-color;
+        margin-bottom: 0;
+        span{
+            display: inline-block;
+            @include gradiant-text;
+            font-weight: 600;
+        }
+    }
+}

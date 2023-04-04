@@ -1,0 +1,109 @@
+.section-top-space{
+padding-top: 32px;
+}
+
+.section-bottom-space{  
+    padding-bottom: 32px;
+}
+
+.section-caption{
+    h5{
+        font-weight: 600;
+        font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1920 - 300)));
+        line-height: 1.5;
+        margin: 0;
+
+        @media (max-width:767px) {
+           margin-bottom: 4px; 
+        }
+    }
+    p{
+        color: $text-color;
+        font-weight: 400;
+        font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1920 - 300)));
+        line-height: 1.4;
+        margin-bottom: 0;
+
+        @media (max-width:767px) {
+            margin-bottom: 15px; 
+         }
+    }
+}
+
+.custom-badge{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: $blue-color;
+
+    svg{
+        max-width: 18px;
+        height: 18px;
+        margin-right: 4px;
+    }
+}
+
+.table-responsive{
+    border: 1px solid $border-color;
+    border-radius: 8px;
+}
+
+table{
+    width: 100%;
+
+    thead{
+        tr{
+            border-bottom: 1px solid $border-color;
+            th{ 
+                padding: 16px;
+                background: #F5F5F5; 
+                font-weight: 600;
+                font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1920 - 300)));
+                line-height: 1.4;
+                white-space: nowrap;
+                &:first-of-type{
+                    border-radius: 8px;
+                }
+                &:last-of-type{
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+
+    tbody{
+        tr{
+            td{
+                padding: 24px 16px;
+                background-color: $white-color;
+                font-weight: 400;
+                font-size: calc(12px + (14 - 12) * ((100vw - 300px) / (1920 - 300)));
+                line-height: 1.2;
+                white-space: nowrap;
+
+                .media{
+                    b{
+                        display: inline-block;
+                        @media (max-width:991px) {
+                           margin-right: 26px;
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+
+.category-badge{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    span{
+        border-radius: 41px;
+        padding: 8px 16px;
+        background-color: $background-color;
+        color: $blue-color;
+    }
+}
